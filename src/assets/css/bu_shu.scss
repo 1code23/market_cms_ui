@@ -1,0 +1,220 @@
+// 部署资源页面的一些公共样式 例如 组件管理--部署
+#bu-shu{
+  // 右侧列表拖拽时的效果样式
+  #drag_list {
+    .chosen {
+      border: 2px dashed #409eff;
+    }
+    .ghost {
+      border: 2px dashed #409eff;
+      opacity: 0.8;
+    }
+    .list-group-item {
+      min-height: 40px;
+      margin-bottom: 10px;
+      box-shadow: 0 0 5px #ccc;
+      position: relative;
+      border: 2px dashed #409eff;
+      &::before {
+        content: "- 拖拽到此处 -";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        line-height: 40px;
+        text-align: center;
+        color: #409eff;
+      }
+      .appid,
+      .yymc,
+      .tb,
+      .bm {
+        display: none;
+        font-size: 14px;
+      }
+    }
+  }
+  // 整体内容部分的分布
+  &.content {
+    display: flex;
+    justify-content: space-around;
+    h4 {
+      font-weight: bold;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    // 左侧分布
+    .c-l {
+     min-width: 600px;
+      span {
+        display: inline-block;
+      }
+    }
+    // 右侧分布
+    .c-r {
+      max-width: 700px;
+      width: 100%;
+      margin-left: 30px;
+      .tag {
+        background: white;
+        cursor: move;
+        border: 2px dashed transparent;
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px;
+        box-shadow: 0 0 5px #ccc;
+        padding: 10px;
+        box-sizing: border-box;
+        position: relative;
+        font-size: 14px;
+        .delete {
+          position: absolute;
+          right: 10px;
+          cursor: pointer;
+          i {
+            color: #f56c6c;
+          }
+        }
+        .t-l {
+          min-width: 50px;
+          width: 50px;
+          height: 50px;
+          border-radius: 50%;
+          overflow: hidden;
+          margin-right: 10px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font-size: 15px;
+          font-weight: bold;
+          background-color: #eee;
+          // img {
+          //   width: 100%;
+          //   height: 100%;
+          //   object-fit: cover;
+          // }
+        }
+        .t-r {
+          width: calc(100% - 80px);
+          p {
+            margin-bottom: 5px;
+          }
+        }
+      }
+    }
+  }
+  //组件部署-页面 自适应窗口
+  .drag-list-page{
+    height: calc(100vh - 430px);
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+  //组件部署-应用 自适应窗口
+.drag_list {
+  height: calc(100vh - 420px);
+  &.isImgType {
+    height: calc(100vh - 470px) !important;
+  }
+}
+//组件部署-列表 自适应窗口
+.drag-list-list{
+  height: calc(100vh - 350px);
+  width: 100%;
+  overflow-y: auto;
+  overflow-x: hidden;
+  border: 1px solid #ebeef5;
+  padding: 10px;
+  box-sizing: border-box;
+  background: url("../../assets/images/market-app.png");
+  background-repeat: no-repeat;
+  background-size: 200px 60px;
+  background-position: 50%;
+}
+}
+
+// 配置应用组件 左侧的公共样式  @/components/DeployResource
+.deploy-resource {
+  width: 100%;
+  .appid,
+  .yymc,
+  .tb,
+  .bm {
+    display: inline-block;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    text-align: center;
+    min-width: 100px;
+  }
+  .bm {
+    width: 100%;
+    // max-width: 150px;
+  }
+  .yymc {
+    width: 100%;
+  }
+  .chosen {
+    border: 2px dashed #67c23a;
+  }
+  .ghost {
+    border: 2px dashed #67c23a;
+  }
+}
+.drag_list {
+  position: relative;
+  width: 100%;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+.list-group-item {
+  display: flex;
+  border: 2px solid transparent;
+  border-bottom: 1px solid #ebeef5;
+  &.not-drag {
+    background: #eeeeee;
+    opacity: 0.8;
+    cursor: not-allowed;
+  }
+}
+
+.list-group-item {
+.icon {
+  width: 40px;
+  height: 40px;
+  margin: 0 auto;
+  img {
+    width: 100%;
+    height: 100%;
+  }
+}
+  .appid,
+  .yymc,
+  .tb,
+  .bm {
+    display: block;
+    padding: 10px 20px !important;
+    box-sizing: border-box;
+    text-align: center;
+    min-width: 100px !important;
+    font-size: 14px;
+    line-height: 40px;
+    // overflow: hidden;
+    // text-overflow: ellipsis;
+    // white-space: nowrap;
+  }
+  .yymc{
+    width: 100%;
+  }
+  .bm {
+    width: 100%;
+    // max-width: 150px;
+  }
+}
+//类似 表头
+.thead {
+  border-bottom: 1px solid #ebeef5;
+  display: flex;
+  span {
+    font-size: 14px;
+    font-weight: bold;
+    color: #5a5a5a;
+  }
+}

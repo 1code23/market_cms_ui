@@ -1,0 +1,1004 @@
+[
+  {
+    "level": 1,
+    "icon": "el-icon-menu",
+    "text": "业务管理",
+    "items": [
+      {
+        "level": 2,
+        "icon": "",
+        "text": "渠道模块",
+        "items": [
+          {
+            "level": 3,
+            "icon": "",
+            "text": "手机型号管理",
+            "path": "/business/channelModule/modelManage",
+            "api": "/Cms/queryDeviceList",
+            "items": [
+              {
+                "text": "新增",
+                "action": "add",
+                "api": "/Cms/createDevice"
+              },
+              {
+                "text": "编辑",
+                "action": "edit",
+                "api": "/Cms/updateDevice"
+              },
+              {
+                "text": "禁用&恢复",
+                "action": "onOff",
+                "api": "/Cms/updateDeviceStatus"
+              }
+            ]
+          },
+          {
+            "level": 3,
+            "icon": "",
+            "text": "服务地管理",
+            "path": "/business/channelModule/servicePlaceManage",
+            "api": "/Cms/queryServiceCodeList",
+            "items": [
+              {
+                "text": "新增",
+                "action": "add",
+                "api": "/Cms/createServiceCode"
+              },
+              {
+                "text": "编辑",
+                "action": "edit",
+                "api": "/Cms/updateServiceCode"
+              },
+              {
+                "text": "禁用&恢复",
+                "action": "onOff",
+                "api": "/Cms/updateServiceCodeStatus"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "icon": "",
+        "text": "市场模块",
+        "items": [
+          {
+            "level": 3,
+            "icon": "",
+            "text": "市场管理",
+            "path": "/business/marketModule/marketManage",
+            "api": "/market/manage/queryList,/language/all",
+            "items": [
+              {
+                "text": "新增",
+                "action": "add",
+                "api": "/market/manage/insert"
+              },
+              {
+                "text": "编辑",
+                "action": "edit",
+                "api": "/market/manage/update"
+              },
+              {
+                "text": "禁用&启用",
+                "action": "onOff",
+                "api": "/market/manage/update"
+              },
+              {
+                "text": "一键复制市场",
+                "action": "copy",
+                "api": "/market/manage/reproduce"
+              },
+              {
+                "text": "部署",
+                "action": "deploy",
+                "api": "/cmsPage/queryList,/list/queryRankList,/cmsPage/historyVerson"
+              },
+              {
+                "text": "部署--新增",
+                "action": "deployAdd",
+                "api": "/cmsPage/insert"
+              },
+              {
+                "text": "部署--编辑",
+                "action": "deployEdit",
+                "api": "/cmsPage/update"
+              },
+              {
+                "text": "部署--删除",
+                "action": "deployDelete",
+                "api": "/cmsPage/delete"
+              },
+              {
+                "text": "部署--配置",
+                "action": "deployConfig",
+                "api": "/assembly/queryAssemblyList,/assembly/queryAssemblyList,/cmsPage/assembly"
+              },
+              {
+                "text": "部署--同步",
+                "action": "deploySync",
+                "api": "/cmsPage/syncPage"
+              },
+              {
+                "text": "部署--国际化",
+                "action": "deployGlobal",
+                "api": "/cmsPage/desc/queryList"
+              },
+              {
+                "text": "部署--国际化--新增",
+                "action": "globalAdd",
+                "api": "/cmsPage/desc/insert"
+              },
+              {
+                "text": "部署--国际化--编辑",
+                "action": "globalEdit",
+                "api": "/cmsPage/desc/update"
+              },
+              {
+                "text": "部署--国际化--删除",
+                "action": "globalDelete",
+                "api": "/cmsPage/desc/delete"
+              }
+            ]
+          },
+          {
+            "level": 3,
+            "icon": "",
+            "text": "市场发布",
+            "path": "/business/marketModule/marketRelease",
+            "api": "/marketPublish/queryList,/market/manage/queryList,/Cms/queryDeviceList",
+            "items": [
+              {
+                "text": "新增",
+                "action": "add",
+                "api": "/marketPublish/insert"
+              },
+              {
+                "text": "编辑",
+                "action": "edit",
+                "api": "/marketPublish/update"
+              },
+              {
+                "text": "禁用&启用",
+                "action": "onOff",
+                "api": "/marketPublish/update"
+              }
+            ]
+          },
+          {
+            "level": 3,
+            "icon": "",
+            "text": "市场切后台请求",
+            "path": "/business/marketModule/homeConfig",
+            "api": "/home/queryList,/Cms/queryDeviceList",
+            "items": [
+              {
+                "text": "新增",
+                "action": "add",
+                "api": "/home/insert"
+              },
+              {
+                "text": "编辑",
+                "action": "edit",
+                "api": "/home/update"
+              },
+              {
+                "text": "禁用&启用",
+                "action": "onOff",
+                "api": "/home/update"
+              }
+            ]
+          },
+          {
+            "level": 3,
+            "icon": "",
+            "text": "隐私管理",
+            "path": "/business/marketModule/privacyManage",
+            "items": []
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "icon": "",
+        "text": "内容模块",
+        "items": [
+          {
+            "level": 3,
+            "icon": "",
+            "text": "组件管理",
+            "path": "/business/contentModule/componentManage",
+            "api": "/assembly/queryAssemblyList,/assembly/queryAssemblyTypeList,/assembly/queryAssemblyStyleList",
+            "items": [
+              {
+                "text": "新增",
+                "action": "add",
+                "api": "/assembly/insertAssembly"
+              },
+              {
+                "text": "一键复制组件",
+                "action": "copy",
+                "api": "/assembly/insertAssembly"
+              },
+              {
+                "text": "部署",
+                "action": "deploy",
+                "api": "/assembly/queryLanguageList,/assembly/queryApkListByAssemblyId,/assembly/queryAssemblyApkList,/assembly/queryApkLabelList,/assembly/queryApkCategoryList,/market/manage/queryList,/cmsPage/queryList,/assembly/queryAssemblyPageList,/assembly/queryAssemblyDetail"
+              },
+              {
+                "text": "国际化",
+                "action": "language",
+                "api": "/assembly/queryAssemblyDescList"
+              },
+              {
+                "text": "编辑",
+                "action": "edit",
+                "api": "/assembly/updateAssembly"
+              },
+              {
+                "text": "部署--保存配置",
+                "action": "save",
+                "api": "/assembly/insertApkList"
+              },
+              {
+                "text": "国际化--新增",
+                "action": "languageAdd",
+                "api": "/assembly/insertAssemblyDesc"
+              },
+              {
+                "text": "国际化--编辑",
+                "action": "languageEdit",
+                "api": "/assembly/updateAssemblyDesc"
+              },
+              {
+                "text": "国际化--删除",
+                "action": "languageDelete",
+                "api": "/assembly/deleteAssemblyDesc"
+              }
+            ]
+          },
+          {
+            "level": 3,
+            "icon": "",
+            "text": "角标管理",
+            "path": "/business/contentModule/cornerManage",
+            "items": [
+              {
+                "text": "新增",
+                "action": "add",
+                "api": "/ozCorner/insertCorner"
+              },
+              {
+                "text": "编辑",
+                "action": "edit",
+                "api": "/ozCorner/insertCorner"
+              },
+              {
+                "text": "删除",
+                "action": "delete",
+                "api": "/ozCorner/deleteCornerByCornerId"
+              },
+              {
+                "text": "配置应用",
+                "action": "deploy",
+                "api": "/ozCorner/insertCornerApk"
+              },
+              {
+                "text": "国际化",
+                "action": "language",
+                "api": "/ozCorner/queryInternationalCornerList"
+              },
+              {
+                "text": "国际化--新增",
+                "action": "languageAdd",
+                "api": "/ozCorner/insertCornerLanguage"
+              },
+              {
+                "text": "国际化--编辑",
+                "action": "languageEdit",
+                "api": "/ozCorner/updateCornerDescById"
+              },
+              {
+                "text": "国际化--删除",
+                "action": "languageDelete",
+                "api": "/ozCorner/deleteCornerById"
+              }
+            ]
+          },
+          {
+            "level": 3,
+            "icon": "",
+            "text": "心愿单管理",
+            "path": "/business/contentModule/wishListManage",
+            "api": "/language/all,/appWish/queryWishList",
+            "items": [
+              {
+                "text": "关联",
+                "action": "relevance",
+                "api": "/assembly/queryAssemblyApkList,/appWish/relationWishById"
+              },
+              {
+                "text": "上线&下线",
+                "action": "onOff",
+                "api": "/appWish/updateWishById"
+              },
+              {
+                "text": "关联--保存",
+                "action": "save",
+                "api": "/assembly/insertAssembly"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "icon": "",
+        "text": "搜索模块",
+        "items": [
+          {
+            "level": 3,
+            "icon": "",
+            "text": "搜索干预",
+            "path": "/business/searchModule/searchIntervene",
+            "api": "/Cms/queryDeviceList,/Oz/queryKeywordConfigList",
+            "items": [
+              {
+                "text": "新增",
+                "action": "add",
+                "api": "/Oz/addKeywordConfig"
+              },
+              {
+                "text": "配置应用",
+                "action": "deploy",
+                "api": "/Oz/selectKeywordApkList,/assembly/queryAssemblyApkList,/Oz/addKeywordApkList"
+              },
+              {
+                "text": "编辑",
+                "action": "edit",
+                "api": "/Oz/updateKeywordConfig"
+              },
+              {
+                "text": "上线&下线",
+                "action": "onOff",
+                "api": "/Oz/updateKeywordConfigStatus"
+              },
+              {
+                "text": "国际化",
+                "action": "language",
+                "api": "/language/all,/Oz/selectDescList"
+              },
+              {
+                "text": "国际化--新增",
+                "action": "languageAdd",
+                "api": "/Oz/addDescList"
+              },
+              {
+                "text": "国际化--编辑",
+                "action": "languageEdit",
+                "api": "/Oz/updateDesclList"
+              },
+              {
+                "text": "国际化--删除",
+                "action": "languageDelete",
+                "api": "/Oz/deleteDesc"
+              }
+            ]
+          },
+          {
+            "level": 3,
+            "icon": "",
+            "text": "滚动词管理",
+            "path": "/business/searchModule/scrollWordManage",
+            "api": "/Cms/queryDeviceList,/Oz/querySearchWordConfList,/Oz/detailDescListByParentId,",
+            "items": [
+              {
+                "text": "新增",
+                "action": "add",
+                "api": "/Oz/createSearchWordConf"
+              },
+              {
+                "text": "编辑",
+                "action": "edit",
+                "api": "/Oz/updateSearchWordConf"
+              },
+              {
+                "text": "配置词语",
+                "action": "deploy",
+                "api": "/Oz/detailListByParentId"
+              },
+              {
+                "text": "配置词语--新增&删除",
+                "action": "deployAddDelete",
+                "api": "/Oz/createDetailList"
+              },
+              {
+                "text": "上架&下架",
+                "action": "onOff",
+                "api": "/Oz/updateSearchWordConfStatus"
+              },
+              {
+                "text": "国际化",
+                "action": "language",
+                "api": "/Oz/updateSearchWordConf,/Oz/detailDescListByParentId"
+              },
+              {
+                "text": "国际化--添加语言",
+                "action": "languageAdd",
+                "api": "/Oz/addDesclList,/Oz/detailListByParentId,/language/all"
+              },
+              {
+                "text": "国际化--编辑",
+                "action": "languageEdit",
+                "api": "/Oz/updateWordConfDetailDesclList,/Oz/detailDescByIds,/Oz/selectdetailDescByIds"
+              },
+              {
+                "text": "国际化--删除",
+                "action": "languageDelete",
+                "api": "/Oz/deleteDetailDescByLanguage"
+              }
+            ]
+          },
+          {
+            "level": 3,
+            "icon": "",
+            "text": "热搜词管理",
+            "path": "/business/searchModule/hotSearchWordManage",
+            "api": "/Cms/queryDeviceList,/Oz/querySearchWordConfList,/Oz/detailDescListByParentId,",
+            "items": [
+              {
+                "text": "新增",
+                "action": "add",
+                "api": "/Oz/createSearchWordConf"
+              },
+              {
+                "text": "编辑",
+                "action": "edit",
+                "api": "/Oz/updateSearchWordConf"
+              },
+              {
+                "text": "配置词语",
+                "action": "deploy",
+                "api": "/Oz/detailListByParentId"
+              },
+              {
+                "text": "配置词语--新增&删除",
+                "action": "deployAddDelete",
+                "api": "/Oz/createDetailList"
+              },
+              {
+                "text": "上架&下架",
+                "action": "onOff",
+                "api": "/Oz/updateSearchWordConfStatus"
+              },
+              {
+                "text": "国际化",
+                "action": "language",
+                "api": "/Oz/updateSearchWordConf,/Oz/detailDescListByParentId"
+              },
+              {
+                "text": "国际化--添加语言",
+                "action": "languageAdd",
+                "api": "/Oz/addDesclList,/Oz/detailListByParentId,/language/all"
+              },
+              {
+                "text": "国际化--编辑",
+                "action": "languageEdit",
+                "api": "/Oz/updateWordConfDetailDesclList,/Oz/detailDescByIds,/Oz/selectdetailDescByIds"
+              },
+              {
+                "text": "国际化--删除",
+                "action": "languageDelete",
+                "api": "/Oz/deleteDetailDescByLanguage"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "icon": "",
+        "text": "应用更新",
+        "items": [
+          {
+            "level": 3,
+            "icon": "",
+            "text": "应用更新检测配置",
+            "path": "/business/applicationModule/testConfiguration",
+            "api": "/adconfig/queryList",
+            "items": [
+              {
+                "text": "新增",
+                "action": "add",
+                "api": "/adconfig/insert,/market/manage/queryList,/Cms/queryDeviceList"
+              },
+              {
+                "text": "编辑",
+                "action": "edit",
+                "api": "/adconfig/update,/market/manage/queryList,/Cms/queryDeviceList"
+              },
+              {
+                "text": "上架&下架",
+                "action": "onOff",
+                "api": "/adconfig/update"
+              }
+            ]
+          },
+          {
+            "level": 3,
+            "icon": "",
+            "text": "系统应用白名单",
+            "path": "/business/applicationModule/systemWhiteList",
+            "api": "/oswhiteapp/queryList",
+            "items": [
+              {
+                "text": "新增",
+                "action": "add",
+                "api": "/oswhiteapp/insert"
+              },
+              {
+                "text": "编辑",
+                "action": "edit",
+                "api": "/oswhiteapp/update"
+              },
+              {
+                "text": "删除",
+                "action": "delete",
+                "api": "/oswhiteapp/delete"
+              }
+            ]
+          },
+          {
+            "level": 3,
+            "icon": "",
+            "text": "自动更新应用配置",
+            "path": "/business/applicationModule/autoUpdate",
+            "api": "/adconfig/queryList",
+            "items": [ {
+              "text": "新增",
+              "action": "add",
+              "api": "/adconfig/insert,/market/manage/queryList,/Cms/queryDeviceList"
+            },
+            {
+              "text": "编辑",
+              "action": "edit",
+              "api": "/adconfig/update,/market/manage/queryList,/Cms/queryDeviceList"
+            },
+            {
+              "text": "上架&下架",
+              "action": "onOff",
+              "api": "/adconfig/update"
+            }]
+          },
+          {
+            "level": 3,
+            "icon": "",
+            "text": "自动更新白名单",
+            "path": "/business/applicationModule/whiteList",
+            "api": "/whiteapp/queryList",
+            "items": [
+              {
+                "text": "新增",
+                "action": "add",
+                "api": "/whiteapp/insert"
+              },
+              {
+                "text": "编辑",
+                "action": "edit",
+                "api": "/whiteapp/update"
+              },
+              {
+                "text": "删除",
+                "action": "delete",
+                "api": "/whiteapp/delete"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "icon": "",
+        "text": "版本升级",
+        "items": [
+          {
+            "level": 3,
+            "icon": "",
+            "text": "版本升级请求配置",
+            "path": "/business/releaseModule/releaseAskDeploy",
+            "api": "/marketUpdate/self/list",
+            "items": [
+              {
+                "text": "下架&上架",
+                "action": "onOff",
+                "api": "/marketUpdate/self/offline,/marketUpdate/self/online"
+              },
+              {
+                "text": "新增",
+                "action": "add",
+                "api": "/marketUpdate/self/save,/market/manage/queryList,/Cms/queryDeviceList"
+              },
+              {
+                "text": "编辑",
+                "action": "edit",
+                "api": "/marketUpdate/self/save,/market/manage/queryList,/Cms/queryDeviceList"
+              }
+            ]
+          },
+          {
+            "level": 3,
+            "icon": "",
+            "text": "版本升级配置",
+            "path": "/business/releaseModule/releaseDeploy",
+            "api": "/marketUpdate/config/list",
+            "items": [
+              {
+                "text": "下架&上架",
+                "action": "onOff",
+                "api": "/marketUpdate/config/offline,/marketUpdate/whitelist/online"
+              },
+              {
+                "text": "新增",
+                "action": "add",
+                "api": "/marketUpdate/config/save,/market/manage/queryList,/Cms/queryDeviceList,/file/apkUpload"
+              },
+              {
+                "text": "编辑",
+                "action": "edit",
+                "api": "/marketUpdate/config/update,/market/manage/queryList,/Cms/queryDeviceList,/file/apkUpload"
+              },
+              {
+                "text": "国际化",
+                "action": "language",
+                "api": "/marketUpdate/desc/list"
+              },
+              {
+                "text": "国际化--新增",
+                "action": "languageAdd",
+                "api": "/marketUpdate/desc/save"
+              },
+              {
+                "text": "国际化--编辑",
+                "action": "languageEdit",
+                "api": "/marketUpdate/desc/update"
+              },
+              {
+                "text": "国际化--删除",
+                "action": "languageDelete",
+                "api": "/marketUpdate/desc/delete"
+              }
+            ]
+          },
+          {
+            "level": 3,
+            "icon": "",
+            "text": "设备白名单",
+            "path": "/business/releaseModule/facilityWhiteList",
+            "api": "/marketUpdate/whitelist/list",
+            "items": [
+              {
+                "text": "下架&上架",
+                "action": "onOff",
+                "api": "/marketUpdate/whitelist/offline,/marketUpdate/whitelist/online"
+              },
+              {
+                "text": "新增",
+                "action": "add",
+                "api": "/marketUpdate/whitelist/save"
+              },
+              {
+                "text": "编辑",
+                "action": "edit",
+                "api": "/marketUpdate/whitelist/update"
+              }
+            ]
+          },
+          {
+            "level": 3,
+            "icon": "",
+            "text": "系统版本号",
+            "path": "/business/releaseModule/versionNumber",
+            "api": "/marketUpdate/apiVersion/list",
+            "items": [
+              {
+                "text": "下架&上架",
+                "action": "onOff",
+                "api": "/marketUpdate/apiVersion/offline,/marketUpdate/apiVersion/online"
+              },
+              {
+                "text": "新增",
+                "action": "add",
+                "api": "/marketUpdate/apiVersion/save"
+              },
+              {
+                "text": "编辑",
+                "action": "edit",
+                "api": "/marketUpdate/apiVersion/update"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "icon": "",
+        "text": "榜单管理",
+        "items": [
+          {
+            "level": 3,
+            "icon": "",
+            "text": "榜单干预",
+            "path": "/business/rankingModule/rankingIntervene",
+            "api": "/list/queryRankDetailList,/list/queryRankList",
+            "items": [
+              {
+                "text": "新增",
+                "action": "add",
+                "api": "/list/queryRankDetailList"
+              },
+              {
+                "text": "编辑",
+                "action": "edit",
+                "api": "/list/updateRankDetail"
+              },
+              {
+                "text": "删除",
+                "action": "delete",
+                "api": "/list/deleteRankDetail"
+              }
+            ]
+          },
+          {
+            "level": 3,
+            "icon": "",
+            "text": "策略管理",
+            "path": "/business/rankingModule/strategyManage",
+            "api": "/list/queryRankList",
+            "items": [
+              {
+                "text": "新增",
+                "action": "add",
+                "api": "/list/insertRank"
+              },
+              {
+                "text": "编辑",
+                "action": "edit",
+                "api": "/list/updateRank"
+              },
+              {
+                "text": "禁用&启用",
+                "action": "onOff",
+                "api": "/list/updateRankByRankId"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "icon": "",
+        "text": "评论管理",
+        "items": [
+          {
+            "level": 3,
+            "icon": "",
+            "text": "评论审核",
+            "path": "/business/commentsModule/audit",
+            "api": "/language/all,/ozComment/queryCommentList",
+            "items": [
+              {
+                "text": "详情",
+                "action": "details",
+                "api": "/ozComment/queryDetails"
+              },
+              {
+                "text": "审核",
+                "action": "audit",
+                "api": "/ozComment/updateAuditStatusByCommentId"
+              }
+            ]
+          },
+          {
+            "level": 3,
+            "icon": "",
+            "text": "举报列表",
+            "path": "/business/commentsModule/report",
+            "api": "/ozComment/queryReportList",
+            "items": []
+          },
+          {
+            "level": 3,
+            "icon": "",
+            "text": "敏感词管理",
+            "path": "/business/commentsModule/sensitive",
+            "api": "/Oz/querySensitiveWordsList",
+            "items": [
+              {
+                "text": "新增",
+                "action": "add",
+                "api": "/Oz/createSensitiveWords"
+              },
+              {
+                "text": "编辑",
+                "action": "edit",
+                "api": "/Oz/updateSensitiveWords"
+              },
+              {
+                "text": "删除",
+                "action": "delete",
+                "api": "/Oz/updateSensitiveWordsStatus"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "icon": "",
+        "text": "黑名单管理",
+        "items": [
+          {
+            "level": 3,
+            "icon": "",
+            "text": "应用黑名单",
+            "path": "/business/blacklistModule/apps",
+            "api": "/apiVersion/all,/black/queryApkBlackList,/Cms/queryDeviceList",
+            "items": [
+              {
+                "text": "新增",
+                "action": "add",
+                "api": "/black/insertApkBlack"
+              },
+              {
+                "text": "编辑",
+                "action": "edit",
+                "api": "/black/updateApkBlackById"
+              },
+              {
+                "text": "上线&下线",
+                "action": "onOff",
+                "api": "/black/updateStatusById"
+              }
+            ]
+          },
+          {
+            "level": 3,
+            "icon": "",
+            "text": "用户黑名单",
+            "path": "/business/blacklistModule/users",
+            "api": "/Cms/queryDeviceList,/black/queryUserBlackList",
+            "items": [
+              {
+                "text": "新增",
+                "action": "add",
+                "api": "/black/insertUserBlack"
+              },
+              {
+                "text": "编辑",
+                "action": "edit",
+                "api": "/black/updateUserBlackById"
+              },
+              {
+                "text": "删除",
+                "action": "delete",
+                "api": "/black/deleteUserBlackById"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "icon": "",
+        "text": "投诉建议",
+        "items": [
+          {
+            "level": 3,
+            "icon": "",
+            "text": "问题反馈",
+            "path": "/business/complaintModule/problemReport",
+            "api": "/feed/queryFeedBackList",
+            "items": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "level": 1,
+    "icon": "el-icon-setting",
+    "text": "系统管理",
+    "items": [
+      {
+        "level": 2,
+        "icon": "",
+        "text": "设置中心",
+        "items": [
+          {
+            "level": 3,
+            "icon": "",
+            "text": "角色管理",
+            "path": "/system/setCenter/roleManage",
+            "api": "/role/queryList",
+            "items": [
+              {
+                "text": "新增",
+                "action": "add",
+                "api": "/role/getMenuTreeBy,/role/addRole"
+              },
+              {
+                "text": "编辑",
+                "action": "edit",
+                "api": "/role/getMenuTreeBy,/role/updateRole"
+              },
+              {
+                "text": "成员管理",
+                "action": "managePeople",
+                "api": "/role/getUserListByRoleId,/role/delUserRole"
+              },
+              {
+                "text": "删除",
+                "action": "del",
+                "api": "/role/deleteRole"
+              }
+            ]
+          },
+          {
+            "level": 3,
+            "icon": "",
+            "text": "用户管理",
+            "path": "/system/setCenter/userManage",
+            "api": "/api/honorManageUser/list",
+            "items": [
+              {
+                "text": "新增",
+                "action": "add",
+                "api": "/role/queryList,/honorManageUser/addUser"
+              },
+              {
+                "text": "编辑",
+                "action": "edit",
+                "api": "/role/queryList,/honorManageUser/editUser"
+              },
+              {
+                "text": "重置密码",
+                "action": "reName",
+                "api": "/honorManageUser/editUser"
+              },
+              {
+                "text": "删除",
+                "action": "del",
+                "api": "/honorManageUser/deleteUser"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "icon": "",
+        "text": "日志管理",
+        "items": [
+          {
+            "level": 3,
+            "icon": "",
+            "text": "日志列表",
+            "path": "/system/logManagement/logList",
+            "api": "/userOperationLog/getUserOperationLog,/userOperationLog/queryDateById",
+            "items": []
+          },
+          {
+            "level": 3,
+            "icon": "",
+            "text": "登录日志",
+            "path": "/system/logManagement/loginLog",
+            "api": "/userLoginLog/getUserLoginLog",
+            "items": []
+          }
+        ]
+      }
+    ]
+  }
+]
